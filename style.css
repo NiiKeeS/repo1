@@ -1,0 +1,284 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+		font-family: 'Roboto', sans-serif;
+font-family: 'Tiro Devanagari Hindi', serif;
+
+}
+body{
+	font-family: arial, helvetica;
+	background: #e8e8e8;
+	margin: 0;
+}
+.header{
+	display: flex;
+	justify-content: space-between;
+}
+.logo{
+margin-left: 0px;
+position: absolute;
+width: 300px;
+}
+.menu{
+	list-style: none;
+	padding: 0;
+	background: #092327;
+	width: 100%;
+	max-width: 2500px; 
+	text-align:right;
+}
+.menu li a{
+	text-decoration: none;
+	color: white;
+	padding: 20px;
+	display: inline-flex;
+	margin: center;
+	text-align: right;
+ }
+.menu li{
+	display: inline-block;
+	text-align: right;
+}
+	
+.menu li a:hover{
+	background:blueviolet;
+	margin: auto;
+	text-align: right;
+}
+
+.wsp{
+	position: fixed;
+	left: 93.8%;
+	top: 88%;
+	width: 55px;
+	height: 55px;
+	line-height: 55px;
+	bottom: 30px;
+	right: 30px;
+	background: #0df053;
+	color: #fff;
+	border-radius: 50px;
+	text-align: center;
+	font-size: 30px;
+	box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+	z-index: 100;
+}
+.wsp:hover{
+	text-decoration: none;
+	color: #0df053;
+	background: silver;
+}
+body{
+	background: url(img/fondo.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	opacity: 10;
+}
+.ig{
+	position: fixed;
+	left: 93.8%;
+	top: 80%;
+	width: 55.5px;
+	height: 50px;
+	line-height: 45px;
+	bottom: 30px;
+	right: 30px;
+	background: violet;
+	color: blueviolet ;
+	border-radius: 40px;
+	text-align: center;
+	font-size: 10px;
+	box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+	z-index: 80;
+}
+.ig:hover{
+	text-decoration: none;
+	color: #0df053;
+	background: silver;
+}
+.carrito{
+
+	position: fixed;
+	left: 93.8%;
+	top: 72%;
+	width: 55.5px;
+	height: 50px;
+	line-height: 45px;
+	bottom: 30px;
+	right: 30px;
+	border-radius: 40px;
+	text-align: center;
+	font-size: 10px;
+	box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+	z-index: 80;
+}
+.carrito:hover{
+	text-decoration: none;
+	color: #0df053;
+	background: silver;
+}
+
+.foto{
+	opacity: 80%;
+	height: auto;
+	margin:auto 0px;
+	overflow: hidden;
+	display: block;
+	text-align: center;
+
+}
+.h2{
+	text-align: center;
+}
+.footer{
+	align-self: flex-end;
+	width: 100%;
+	height: 50px;
+	text-align: center;
+}
+.info{
+	margin: 40px;
+	background: dimgray;
+    opacity: 100%;
+    height: auto;
+    text-align: center;
+    margin-bottom: 0px;
+}
+.info2{
+	margin: 40px;
+	background: silver;
+	text-align: center;
+	margin-bottom: 0px;
+}
+.info3{
+	margin: 40px;
+	background: gray;
+	text-align: center;
+	margin-bottom: 0px;
+}
+.info4{
+	margin: 40px ;
+	background: silver;
+	text-align: center;
+	margin-bottom: 0px;
+}
+.productos{
+	text-align: center;
+}
+.imagenes1{
+    justify-content: space-between;
+	display: flex;
+	align-items: center;
+	margin-bottom: 40px;
+}
+
+.imagenes2{
+	display: flex;
+	align-items: center;
+	margin-bottom: 40px;
+}
+.imagenes3{
+	display: flex;
+	align-items: center;
+	margin-bottom: 40px;
+}
+.carritos{
+	text-align: center;
+	background:silver ;
+}
+.vendido1{
+	justify-content: space-between;
+	display: flex;
+	align-items: center;
+	margin-bottom: 40px;
+}
+.vendido2{
+	display: flex;
+	align-items: center;
+}
+.position{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.texto{
+    text-align: center;
+}
+.grid-container{
+	background-color: dimgray;
+	height: 700px;
+	opacity: 70%;
+	display: grid;
+	grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto ;
+    text-align: center;
+
+}
+.grid-container div{
+	background-color: floralwhite;
+	text-align: center;
+	color: black;
+	border:1px solid black ;
+}
+.item1{
+	grid-column: 1 / span 6 ;
+}
+.item2{
+	grid-column: 1 / span 3;
+}
+.item3{
+	grid-column: 3 / span 2	;	
+}
+.item4{
+grid-row: 3 / 3;
+margin-right: 50px;
+}
+.item5{
+grid-row: 3 / 5;
+margin-right: 50px;
+}
+.item6{
+grid-row: 3 / 3	;
+grid-column: 3 / span 1;
+margin-right: 50px;
+}
+
+@media only screen and (min-width:  768px){
+	body{
+		grid-template-columns: repeat(3, 1fr) ;
+		grid-template-rows: 10vh 85vh 5vh;
+        grid-template-areas: "nav nav nav"
+        "main main aside"
+        "pie pie pie"
+
+	}
+}
+@media only screen and (min-width:  1024px){
+	body{
+
+ grid-template-columns: repeat(3, 1fr) ;
+		grid-template-rows: 10vh 85vh 5vh;
+        grid-template-areas: "nav nav nav"
+        "main main aside"
+        "pie pie pie";
+    }
+}
+@media only screen and (min-width:  375px){
+body{
+
+ grid-template-columns: repeat(3, 1fr) ;
+		grid-template-rows: 10vh 85vh 5vh;
+        grid-template-areas: "nav nav nav"
+        "main main aside"
+        "pie pie pie";
+
+
+
+}    
+}
+.logo{
+	height: 50px;
+}
